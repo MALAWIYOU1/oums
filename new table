@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package pkgnew.table;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author hp
+ */
+public class NewTable {
+    private static int sc;
+     
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int[] tab = {12, 15, 13, 10, 8, 9, 13, 14}; 
+       int n; 
+       boolean estLa =false;
+       System.out.println("Entrez le nombre a chercher: ");
+       Scanner sc = new Scanner(System.in);
+       n = sc.nextInt();
+       for( int i =0; 
+               i<tab.length; i++){
+         if(tab[i] == n){ 
+            estLa =true; 
+         } 
+    }  if(estLa){ 
+        System.out.println("Le nombre est dans le tableau"); 
+      }else{
+       System.out.println("Le nombre n’est pas dans le tableau");
+    }
+  }
+    
+}
