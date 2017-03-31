@@ -1,0 +1,21 @@
+public class_Parité {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("taper un nombre ");
+     Scanner entier= new Scanner (System.in);
+     // n=q*2+r
+     
+      int n=entier.nextInt();
+      int r=n%2;
+if(r==0){
+    System.out.println("   ce nombre est pair");
+    }
+else{
+    System.out.println("   ce nombre est pas impair");
+}
+                   
+      }
+}
